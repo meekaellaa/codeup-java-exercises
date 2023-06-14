@@ -32,13 +32,26 @@ public class ConsoleExercises {
 //        String sentence = myScanner.nextLine();
 //        System.out.println("You wrote = " + sentence);
 //  Prompt the user for values of length and width:
-        System.out.println("Enter the length of the Classroom: ");
-        double length = myScanner.nextInt();
-        System.out.println("Enter the width of the Classroom: ");
-        double width = myScanner.nextInt();
-        double lw = 2 * length + 2 * width;
-        System.out.println("Area of the Classroom is: " + lw);
+//        System.out.println("Enter the length of the Classroom: ");
+//        double length = myScanner.nextInt();
+//        System.out.println("Enter the width of the Classroom: ");
+//        double width = myScanner.nextInt();
+//        double lw = 2 * length + 2 * width;
+//        System.out.println("Area of the Classroom is: " + lw);
 
+//Cody's solution:
+
+        System.out.println("Enter the length of the Classroom: ");
+        String input = myScanner.nextLine();
+        int length = Integer.parseInt(input);
+        System.out.println("length = " + length);
+        System.out.println("Enter the width of the Classroom: ");
+        String input2 = myScanner.nextLine();
+        int width = Integer.parseInt(input2);
+        System.out.println("width = " + width);
+        int area = 2 * (length + width);
+        System.out.println("area = " + area);
+        System.out.printf("area = %s" , area);
 
     }
 }
