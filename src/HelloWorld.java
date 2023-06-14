@@ -38,7 +38,9 @@ public class HelloWorld {
 //        long myNumber = 3.14;
 //    java: incompatible types: possible lossy conversion from double to long. Don't need to use long because it's already a double.
 //  #9 Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this
-//       float myNumber = 3.14;
+//       float myNumber = 3.14F;
+//        float myNumber = (float) 3.14;
+//        double myNumber = 3.14;
 //     java: incompatible types: possible lossy conversion from double to float.
 //  #10  Copy and paste the following code blocks one at a time and execute them.
 //        int x = 5;
@@ -56,7 +58,7 @@ public class HelloWorld {
 //  #11 Try to create a variable named class. What happens?
 //        class is a reserved class in Java o it wouldn't work.
 //  #12  Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
-//        String theNumberThree = "three";
+//        String theNumberThree = "three"; will not work
 //        Object o = theNumberThree;
 //        int three = (int) o;
 //        Exception in thread "main" java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
@@ -66,28 +68,25 @@ public class HelloWorld {
 //  #13 Rewrite the following expressions using the relevant shorthand assignment operators:
 //        int x = 4;
 //        x = x + 5;
-////
+//        x += 5;
+//        System.out.println(x);
 //        int x = 3;
 //        int y = 4;
 //        y = y * x;
-////
+//          y *= x;
 //        int x = 10;
 //        int y = 2;
 //        x = x / y;
+//        x /= y;
 //        y = y - x;
+//        y -= x;
 //        What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold? What happens if you increment a numeric variable past the type's capacity?
 //        Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value for the int type.
-
-
-
-
-
-
-
-
-
-
-
+    byte myByte = 127;
+        System.out.println(myByte);
+        myByte++;
+        System.out.println(myByte);
+        //integer overflow
 
 
     }
