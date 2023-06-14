@@ -19,7 +19,27 @@ public class Main {
 //        long myNumber = (long) 3.14;
 //   get screamed at by intellij. intellij instructed to re-write long myNumber = 3.14; to long myNumber = (long) 3.14;
 //  #7  Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
-    long myNumber = 123L;
+//    long myNumber = 123L;
+//#8 Change your code to assign the value 123 to myNumber.
+//Why does assigning the value 3.14 to a variable declared as a long not compile, but assigning an integer value does?
+//        long myNumber = 3.14;
+//    java: incompatible types: possible lossy conversion from double to long. Don't need to use long because it's already a double.
+//  #9 Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this
+//       float myNumber = 3.14;
+//     java: incompatible types: possible lossy conversion from double to float.
+//  #10  Copy and paste the following code blocks one at a time and execute them.
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+// Didn't print.
+        int x = 5;
+        System.out.println(++x);
+        System.out.println(x);
+
+
+
+
+
 
 
     }
