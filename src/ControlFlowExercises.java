@@ -71,28 +71,29 @@ public class ControlFlowExercises {
 //            String answer = scan.nextLine();
 //            userContinue = answer.equals("yes");
 //        } while (userContinue);
+
 //        #4
-        boolean userContinue;
-        Scanner scan = new Scanner(System.in);
-        do {
-            System.out.println("Choose a grade as a number: ");
-            int userNumber = scan.nextInt();
-            if (userNumber >= 88){
-                System.out.println("You've got an A!");
-            } else if (userNumber >= 80) {
-                System.out.println("You've got a B!");
-            } else if (userNumber >= 67) {
-                System.out.println("You've got a C!");
-            } else if (userNumber >= 60) {
-                System.out.println("You've got a D!");
-            } else {
-                System.out.println("You've got an F....");
-            }
-            System.out.println("Do you want to enter another grade? ");
-            scan.nextLine();
-            String answer = scan.nextLine();
-            userContinue = answer.equals("yes");
-        } while (userContinue);
+//        boolean userContinue;
+//        Scanner scan = new Scanner(System.in);
+//        do {
+//            System.out.println("Choose a grade as a number: ");
+//            int userNumber = scan.nextInt();
+//            if (userNumber >= 88){
+//                System.out.println("You've got an A!");
+//            } else if (userNumber >= 80) {
+//                System.out.println("You've got a B!");
+//            } else if (userNumber >= 67) {
+//                System.out.println("You've got a C!");
+//            } else if (userNumber >= 60) {
+//                System.out.println("You've got a D!");
+//            } else {
+//                System.out.println("You've got an F....");
+//            }
+//            System.out.println("Do you want to enter another grade? ");
+//            scan.nextLine();
+//            String answer = scan.nextLine();
+//            userContinue = answer.equals("yes");
+//        } while (userContinue);
 
 
 
