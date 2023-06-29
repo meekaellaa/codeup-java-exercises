@@ -16,7 +16,9 @@ public class Bob {
             System.out.println(chillOutDude);
         } else if (whatYouSaidToBob.trim().isEmpty()) {
             System.out.println(bobFine);
-        } else System.out.println(bobWhatEver);
+        } else {
+            System.out.println(bobWhatEver);
+        }
 
 
     }
